@@ -1,0 +1,18 @@
+Source: dummy-firmware
+Section: misc
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Heinrich Schuchardt <heinrich.schuchardt@canonical.com>
+Build-Depends: debhelper-compat (= 13),
+Standards-Version: 4.5.1
+Homepage: https://github.com/xypron/dummy-firmware
+Vcs-Browser: https://github.com/xypron/dummy-firmware
+Vcs-Git: https://github.com/xypron/dummy-firmware.git
+Rules-Requires-Root: no
+
+Package: dummy-firmware
+Architecture: all
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Firmware on the ESP demo
+ This is just for testing installation of firmware on the EFI system partition.

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+##DEBHELPER##
+
+set -e
+
+ARCH=$(uname -m)
+
+if test $ARCH != "riscv64"; then
+    exit 0
+fi
+
+case "$1" in
+    configure)
+        mkdir -p /boot/efi/FIRMWARE/dummy-vendor/
+        cp /usr/lib/dummy-firmware/dummy-board/ -R \
+        /boot/efi/FIRMWARE/dummy-vendor
+        ;;
+
+esac
+
+exit 0

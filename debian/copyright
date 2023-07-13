@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://www.example.com/software/project
+Upstream-Name: debian-software
+Upstream-Contact: Heinrich Schuchardt <heinrich.schuchardt@canonical.com>
+
+Files:
+ *
+Copyright: 2023 Heinrich Schuchardt <heinrich.schuchardt@canonical.com>
+License: GPL-2+
+ On Debian systems the full text of the GNU General Public
+ License can be found in the `/usr/share/common-licenses/GPL-2'
+ file.

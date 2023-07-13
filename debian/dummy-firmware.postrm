@@ -1,0 +1,14 @@
+#!/bin/sh
+
+##DEBHELPER##
+
+set -e
+
+case "$1" in
+    remove)
+        rm -rf /boot/efi/FIRMWARE/dummy-vendor/
+        ;;
+
+esac
+
+exit 0
